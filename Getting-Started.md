@@ -33,7 +33,7 @@
 
 ### Gradle Kotlin Script
 
-If you're using older version of Gradle, add the following to your `build.gradle` file.
+如果你使用舊版的 Gradle，需要在 `build.gradle` 內加上以下內容：
 
 ```
 repositories {
@@ -46,7 +46,7 @@ dependencies {
 }
 ```
 
-If you're using newer versions of Gradle, you can add the following to your `build.gradle.kts`.
+如果你使用舊版的 Gradle，可以在 `build.gradle.kts` 內加上以下內容：
 
 ```
 val exposedVersion: String by project
@@ -57,7 +57,7 @@ dependencies {
 }
 ```
 
-And the version in your `gradle.properties`
+`gradle.properties` 內調整版本號：
 
 ```
 exposedVersion=0.29.1
@@ -65,13 +65,13 @@ exposedVersion=0.29.1
 
 - Note: There are another modules. Detailed information located in [[Modules Documentation|LibDocumentation]] section.
 
-## Getting Started
+## 開始
 
-### Starting a transaction
+### 開始交易
 
 Every database access using Exposed is started by obtaining a connection and creating a transaction.
 
-To get a connection:
+取得連線：
 
 ```kotlin
 Database.connect("jdbc:h2:mem:test", driver = "org.h2.Driver")
@@ -83,7 +83,7 @@ It is also possible to provide `javax.sql.DataSource` for advanced behaviors suc
 Database.connect(dataSource)
 ```
 
-More details on [[DataBase and DataSource|DataBase-and-DataSource]]
+到 [[DataBase and DataSource|DataBase-and-DataSource]] 看更多細節
 
 After obtaining a connection all SQL statements should be placed inside a transaction:
 
@@ -102,9 +102,9 @@ transaction {
 }
 ```
 
-### DSL & DAO
+### 領域專用語言和資料存取物件
 
-Exposed comes in two flavors: DSL (Domain Specific Language) and DAO (Data Access Object).  
+Exposed comes in two flavors: 領域專用語言（DSL，Domain Specific Language）和資料存取物件（DAO，Data Access Object）  
 On a high level, DSL means type-safe syntax that is similar to SQL whereas DAO means doing CRUD operations on entities.  
 Observe the below examples and head on to the specific section of each API for more details.
 
@@ -139,7 +139,7 @@ object Cities: IntIdTable() {
 
 ```
 
-到 [[DSL API|DSL]] 看更多
+到 [[DSL API|DSL]] 看更多教學
 
 ### 第一個 Exposed DAO
 
@@ -177,6 +177,6 @@ class City(id: EntityID<Int>) : IntEntity(id) {
 }
 ```
 
-More on [[DAO API|DAO]]
+到 [[DAO API|DAO]] 看更多教學
 
-Or... back to [[Introduction|Home]]
+或者，回到 [[Introduction|Home]]
