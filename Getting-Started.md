@@ -1,4 +1,4 @@
-## Download
+## 下載
 
 ### Maven
 
@@ -108,7 +108,7 @@ Exposed comes in two flavors: DSL (Domain Specific Language) and DAO (Data Acces
 On a high level, DSL means type-safe syntax that is similar to SQL whereas DAO means doing CRUD operations on entities.  
 Observe the below examples and head on to the specific section of each API for more details.
 
-### Your first Exposed DSL
+### 第一個 Exposed DSL
 
 ```kotlin
 
@@ -139,9 +139,9 @@ object Cities: IntIdTable() {
 
 ```
 
-More on [[DSL API|DSL]]
+到 [[DSL API|DSL]] 看更多
 
-### Your first Exposed DAO
+### 第一個 Exposed DAO
 
 ```kotlin
 
