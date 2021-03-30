@@ -1,4 +1,4 @@
-Welcome to the Exposed wiki! (Still Under Construction)
+歡迎來到 Exposed wiki！（內容建立中）
 
 Exposed is a lightweight SQL library on top of JDBC driver for Kotlin language.  
 Exposed has two flavors of database access: typesafe SQL wrapping DSL and lightweight Data Access Objects (DAO)
@@ -15,8 +15,7 @@ This wiki contains the following pages:
   * [[Frequently Asked Questions|FAQ]]
   * [[Migration Guide|Migration-Guide]]
 
-
-Currently supported database dialects are:
+目前支援的資料庫如下：
 
 * PostgreSQL
 * MySQL
