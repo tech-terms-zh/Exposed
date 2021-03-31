@@ -63,7 +63,7 @@ dependencies {
 exposedVersion=0.29.1
 ```
 
-- Note: There are another modules. Detailed information located in [[Modules Documentation|LibDocumentation]] section.
+- 備註：還有其他的模組可使用。細節詳見 [模組相關文件|LibDocumentation]]
 
 ## 開始
 
@@ -93,7 +93,7 @@ transaction {
 }
 ```
 
-To see the actual DB calls, add a logger:
+要看實際呼叫資料庫的內容，可以加上一個 logger：
 
 ```kotlin
 transaction {
@@ -104,11 +104,11 @@ transaction {
 
 ### 領域專用語言和資料存取物件
 
-Exposed comes in two flavors: 領域專用語言（DSL，Domain Specific Language）和資料存取物件（DAO，Data Access Object）  
+Exposed 兩種使用方式：領域專用語言（DSL，Domain Specific Language）和資料存取物件（DAO，Data Access Object）  
 On a high level, DSL means type-safe syntax that is similar to SQL whereas DAO means doing CRUD operations on entities.  
 Observe the below examples and head on to the specific section of each API for more details.
 
-### 第一個 Exposed DSL
+### 第一個 Exposed 領域專用語言
 
 ```kotlin
 
@@ -139,9 +139,9 @@ object Cities: IntIdTable() {
 
 ```
 
-到 [[DSL API|DSL]] 看更多教學
+到 [[領域專用語言 API|DSL]] 看更多教學
 
-### 第一個 Exposed DAO
+### 第一個 Exposed 資料存取物件
 
 ```kotlin
 
@@ -177,6 +177,6 @@ class City(id: EntityID<Int>) : IntEntity(id) {
 }
 ```
 
-到 [[DAO API|DAO]] 看更多教學
+到 [[資料存取物件 API|DAO]] 看更多教學
 
-或者，回到 [[Introduction|Home]]
+或者，回到 [[介紹|Home]]
