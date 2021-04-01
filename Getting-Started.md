@@ -69,7 +69,7 @@ exposedVersion=0.29.1
 
 ### 開始交易
 
-Every database access using Exposed is started by obtaining a connection and creating a transaction.
+每個使用 Exposed 存取資料庫的行為，都從取得連線並建立交易開始。
 
 取得連線：
 
@@ -77,15 +77,15 @@ Every database access using Exposed is started by obtaining a connection and cre
 Database.connect("jdbc:h2:mem:test", driver = "org.h2.Driver")
 ```
 
-It is also possible to provide `javax.sql.DataSource` for advanced behaviors such as connection pooling:
+要處理進階的操作，像是連線匯集池（connection pooling），也可以提供 `javax.sql.DataSource` 進行操作：
 
 ```kotlin
 Database.connect(dataSource)
 ```
 
-到 [[DataBase and DataSource|DataBase-and-DataSource]] 看更多細節
+到 [[資料庫和資料來源|DataBase-and-DataSource]] 看更多細節
 
-After obtaining a connection all SQL statements should be placed inside a transaction:
+在連線後，所有的 SQL 敘述（statement）都需被放在一個交易處理（transaction）中
 
 ```kotlin
 transaction {
@@ -105,8 +105,8 @@ transaction {
 ### 領域專用語言和資料存取物件
 
 Exposed 兩種使用方式：領域專用語言（DSL，Domain Specific Language）和資料存取物件（DAO，Data Access Object）  
-On a high level, DSL means type-safe syntax that is similar to SQL whereas DAO means doing CRUD operations on entities.  
-Observe the below examples and head on to the specific section of each API for more details.
+簡而言之，領域專用語言，是用型別安全（type-safe）的語法來操作 SQL。資料存取物件，則是用元件的方式執行 CRUD 操作。
+先看看下面的範例，然後到各個 API 專屬的章節，看更多的細節。
 
 ### 第一個 Exposed 領域專用語言
 
