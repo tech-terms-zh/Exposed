@@ -1,6 +1,7 @@
-## Overview
+## 概觀
 
-CRUD operations in Exposed must be called from within a _transaction._ Transactions encapsulate a set of DSL operations. To create and execute a transaction with default parameters, simply pass a function block to the `transaction` function:
+Exposed 內的 CRUD 操作必須在一個 _交易（transaction）_ 內呼叫。交易的作用是用來封裝一系列的領域專用語言（DSL）操作。要以預設的參數建立並執行交易，只要將函式放在 `transaction` 函式內：
+
 ```kotlin
 transaction {
     // DSL/DAO operations go here
